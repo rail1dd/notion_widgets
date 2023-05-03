@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="4u4me" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> 4u4me</a>
+		<a id="now" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-sun"></i> Now</a>
+		<a id="relax" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-mug-saucer"></i> Relax</a>
+    <a id="reading" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-book"></i> Reading</a>
+    <a id="board" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-hundred-points"></i> Board</a>
+    <a id="sites" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-earth-americas"></i> Sites</a>
+    <a id="RSS" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bell"></i> RSS</a>
+    <a id="countdown" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-hourglass-half"></i> Countdown</a>
+    <a id="shortcuts" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-key"></i> Shortcuts</a>
+    <a id="templates" onclick="navigate(this.id)" href="#"> <i class="fa-sharp fa-solid fa-bag-seedling"></i> Templates</a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/rail1dd/1dd-s-Home-Sweet-Home-c9fef82fc11d4580ab6e5cde4a9f5ff4", '_blank').focus();
+			else if (id == "4u4me")
+				window.open("https://www.notion.so/rail1dd/4u-4me-12f955be318f492f98d2a2859fb479de", '_blank').focus();
+			else if (id == "now")
+				window.open("https://www.notion.so/rail1dd/Now-7d58b0c99712492f8e01756c7f4fd7aa", '_blank').focus();
+			else if (id == "relax")
+				window.open("https://www.notion.so/rail1dd/Relax-42b5aaf025cc49c0a513fccf9c10a586", '_blank').focus();
+			else if (id == "reading")
+				window.open("https://www.notion.so/rail1dd/Reading-a850c9f24fdb4dfe834179ac3fd91366", '_blank').focus();
+			else if (id == "board")
+				window.open("https://www.notion.so/rail1dd/Board-7330a27595934d73901a8972ba63d110", '_blank').focus();
+			else if (id == "sites")
+				window.open("https://www.notion.so/rail1dd/Sites-7d923b3be3e44ca5b7b8acad8fc0fa4d", '_blank').focus();
+			else if (id == "RSS")
+				window.open("https://www.notion.so/rail1dd/RSS-0bceb5cea7fc4e0d9f642dc4da4615c4", '_blank').focus();
+			else if (id == "countdown")
+				window.open("https://www.notion.so/rail1dd/Countdown-bec32911ac034deeabd90dd90aad7659", '_blank').focus();
+			else if (id == "shortcuts")
+				window.open("https://www.notion.so/rail1dd/Shortcuts-7255edbb07ed4e4592ad40f1bb8581b5", '_blank').focus();
+			else if (id == "templates")
+				window.open("https://www.notion.so/rail1dd/Templates-d902bec9733340d09aa16f8f440ffb0a", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
