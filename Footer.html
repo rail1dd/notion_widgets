@@ -1,22 +1,41 @@
+<footer>
+  <div class="footer-section">
+    <p id="footer-text"></p>
+  </div>
+  <div class="footer-section">
+    <p>
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="color: #999;">CC BY-NC-ND 4.0</a>
+    </p>
+    <p>
+      Made with ♥︎ by Rail1dd · Powered by 
+      <a href="https://www.cloudflare-cn.com/" target="_blank" style="color: #999;">Cloudflare</a> & 
+      <a href="https://www.notion.so/" target="_blank" style="color: #999;">Notion</a>.
+    </p>
+  </div>
+</footer>
+
 <style>
   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+  }
+  
+  .footer-section {
+    flex: 1;
   }
   
   p:first-of-type {
     color: #000;
   }
   
-  p:last-of-type {
+  a {
     color: #999;
   }
-
 </style>
-<footer>
-  <p id="footer-text"></p>
-</footer>
 
 <script>
   // 获取当前时间
@@ -32,17 +51,3 @@
   // 更新页脚文本
   document.getElementById("footer-text").innerHTML = "本站已运营 " + days + " 天";
 </script>
-<footer>
-  <p>Copyright © 2020 - 2023 · 
-      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> & 
-  </p>
-  <p>Made with ♥︎ by Rail1dd · Powered by 
-  <a href="https://www.cloudflare-cn.com/" target="_blank">Cloudflare</a> & 
-  <a href="https://www.notion.so/" target="_blank">Notion</a>.
-  </p>
-</footer>
-
-<p>Made with ♥︎ by Rail1dd · Powered by 
-  <a href="https://www.cloudflare-cn.com/" target="_blank">Cloudflare</a> & 
-  <a href="https://www.notion.so/" target="_blank">Notion</a>.
-</p>
