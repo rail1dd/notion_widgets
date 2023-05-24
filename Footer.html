@@ -14,7 +14,24 @@
   }
 
 </style>
+<footer>
+  <p id="footer-text"></p>
+</footer>
 
+<script>
+  // 获取当前时间
+  var now = new Date();
+  
+  // 设置网站运营开始时间
+  var launchDate = new Date("2020-01-01");
+  
+  // 计算网站运营时间
+  var diff = now.getTime() - launchDate.getTime();
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  
+  // 更新页脚文本
+  document.getElementById("footer-text").innerHTML = "本站已运营 " + days + " 天";
+</script>
 <footer>
   <p>Copyright © 2020 - 2023 · 
     <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
