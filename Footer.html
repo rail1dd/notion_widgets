@@ -1,44 +1,56 @@
-<footer>
-  <p id="footer-text"></p>
-  <p>
-    Copyright © 2020 - 2023 · 
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>  
-  </p>
-  <p>
-    Made with ♥︎ by Rail1dd · Powered by 
-    <a href="https://www.cloudflare-cn.com/" target="_blank">Cloudflare</a> & 
-    <a href="https://www.notion.so/" target="_blank">Notion</a>.
-  </p>
-</footer>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+   <title>rail1dd主页底部展示</title>
+</head>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<body>
+   
+<div style="text-align: center;position:fixed;bottom:0px;width: 97%;">
 
-<style>
-  footer {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
+   <div className="bsz"><b><span id="busuanzi_container_site_pv">♡ Thanks for visiting   <span id="busuanzi_value_site_pv" style="color: #8bc34b;"></span> visitors are counting ♡</span></b></div>
+   <div style="margin-top: 10px;">
+        
+     <span id="momk"></span>
+     <span id="momk" style="color: #ddd;font-weight:lighter;"></span> 
+     <script type="text/javascript">
+   function NewDate(str) {
+  str = str.split('-');
+  var date = new Date();
+  date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+  date.setUTCHours(0, 0, 0, 0);
+  return date;
   }
-  
-  p:first-of-type {
-    color: #000;
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #999;
-  }
-</style>
+  function momxc() {
+  var birthDay =NewDate("2023-03-30");
+  var today=new Date();
+  var timeold=today.getTime()-birthDay.getTime();
+  var sectimeold=timeold/1000
+  var secondsold=Math.floor(sectimeold);
+  var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+  var daysold=Math.floor(e_daysold);
+  var e_hrsold=(daysold-e_daysold)*-24;
+  var hrsold=Math.floor(e_hrsold);
+  var e_minsold=(hrsold-e_hrsold)*-60;
+  var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+  document.getElementById("momk").innerHTML = "This site has been operating for "+daysold+" days "+hrsold+" h "+minsold+" m "+seconds+" s ";
+  setTimeout(momxc, 1000);
+  }momxc();
+  </script> 
+  </div>
+  <br>
+<b style="font-weight:lighter">Copyright © 2020-2023 · 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="color: #999999;">CC BY-NC-ND 4.0</a>  
+    <br>
+    Made by rail1dd · Powered by 
+    <a href="https://www.cloudflare-cn.com/" target="_blank" style="color: #999999;">Cloudflare</a> & 
+    <a href="https://www.notion.so/" target="_blank" style="color: #999999;">Notion</a>.
+</br>
+</b>
+</div>
 
-<script>
-  // 获取当前时间
-  var now = new Date();
-  
-  // 设置网站运营开始时间
-  var launchDate = new Date("2020-04-01");
-  
-  // 计算网站运营时间
-  var diff = now.getTime() - launchDate.getTime();
-  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  
-  // 更新页脚文本
-  document.getElementById("footer-text").innerHTML = "This site has been operating for " + days + " days";
-</script>
+</body>
+
+</html>
