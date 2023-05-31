@@ -34,9 +34,11 @@
       /* Change the icons colours here*/
       color: #7a7a7a
     }
+  .blog:hover {
+      color: #ff6b7f;
+    }
 
-
-    .blog:hover {
+    .wechat:hover {
       color: #04d166;
     }
 
@@ -95,11 +97,12 @@
 
     <div class="wrapper">
 
-      <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="social">
-        <span class="icon blog"><i class="fa-solid fa-comments"></i></span>
+
+      <!-- Start wechat Icon -->
+      <div id=".wechat" onclick="navigate(this.id)" class="social">
+        <span class="icon wechat"><i class="fa-solid fa-comments"></i></span>
       </div>
-      <!-- End blog Icon -->
+      <!-- End wechat Icon -->
 
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social">
@@ -133,7 +136,11 @@
       <!-- End telegram Icon -->
 
 
-
+        <!-- Start blog Icon -->
+      <div id=".blog" onclick="navigate(this.id)" class="social">
+        <span class="icon blog"><i class="fa-solid fa-blog"></i></span>
+      </div>
+      <!-- End blog Icon -->
     </div>
 
 
@@ -143,9 +150,10 @@
       function navigate(id) {
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
-
         if (id === "blog")
-          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Wechat_QRcode.png", '_blank').focus(); //Add the url to your blog
+          window.open("https://rail1dd.top", '_blank').focus(); //Add the url
+        if (id === "wechat")
+          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Wechat_QRcode.png", '_blank').focus(); //Add the url
 
         else if (id === "email") {
           window.open("mailto:yumm@rail1dd.ac.cn", '_blank').focus(); //Add your email after "mailto:""
