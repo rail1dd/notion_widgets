@@ -152,13 +152,12 @@
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
         if (id === "blog")
           window.open("https://rail1dd.top", '_blank').focus(); //Add the url
-        if (id === "wechat")
-          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Wechat_QRcode.png", '_blank').focus(); //Add the url
-
+        else if (id === "wechat") {
+          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Wechat_QRcode.png", '_blank').focus(); //Add your email after "mailto:""
+        }
         else if (id === "email") {
           window.open("mailto:yumm@rail1dd.ac.cn", '_blank').focus(); //Add your email after "mailto:""
         }
-
         else if (id === "facebook") {
           window.open("https://music.163.com/#/user?id=440336319", '_blank').focus(); //Add the url to your facebook page or account
         }
