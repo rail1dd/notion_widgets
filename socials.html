@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html lang="en">
 
 <head>
@@ -34,12 +35,10 @@
       /* Change the icons colours here*/
       color: #7a7a7a
     }
-  .blog:hover {
-      color: #ff6b7f;
-    }
 
-    .wechat:hover {
-      color: #04d166;
+
+    .blog:hover {
+      color: #ff6b7f;
     }
 
     .email:hover {
@@ -47,15 +46,15 @@
     }
 
     .facebook:hover {
-      color: #ff0000;
+      color: #04d166;
     }
 
     .instagram:hover {
-      color: #000000;
+      color: rgb(241, 102, 217);
     }
 
     .linkedin:hover {
-      color: #0e76a8;
+      color: #ff0000;
     }
 
     .twitter:hover {
@@ -63,11 +62,11 @@
     }
 
     .reddit:hover {
-      color: #ff4500;
+      color: #000000;
     }
 
     .tiktok:hover {
-      color: #ff0050;
+      color: #000000;
     }
 
     .youtube:hover {
@@ -75,7 +74,7 @@
     }
 
     .pinterest:hover {
-      color: #000000;
+      color: #c8232c;
     }
 
     .telegram:hover {
@@ -97,12 +96,12 @@
 
     <div class="wrapper">
 
-
-      <!-- Start wechat Icon -->
-      <div id=".wechat" onclick="navigate(this.id)" class="social">
-        <span class="icon wechat"><i class="fa-solid fa-comments"></i></span>
+      <!-- Start facebook Icon -->
+      <div id="facebook" onclick="navigate(this.id)" class="social">
+        <span class="icon facebook"><i class="fa fa-comments"></i></span>
       </div>
-      <!-- End wechat Icon -->
+      <!-- End facebook Icon -->
+
 
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social">
@@ -110,24 +109,26 @@
       </div>
       <!-- End email Icon -->
 
-      <!-- Start facebook Icon -->
-      <div id="facebook" onclick="navigate(this.id)" class="social">
-        <span class="icon facebook"><i class="fa-solid fa-music"></i></span>
-      </div>
-      <!-- End facebook Icon -->
-
-      <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="social">
-        <span class="icon instagram"><i class="fa-brands fa-github"></i></span>
-      </div>
-      <!-- End instagram Icon -->
 
 
-      <!-- Start pinterest Icon -->
-      <div id="pinterest" onclick="navigate(this.id)" class="social">
-        <span class="icon pinterest"><i class="fa-brands fa-apple"></i></span>
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fa fa-music"></i></span>
       </div>
-      <!-- End pinterest Icon -->
+      <!-- End linkedin Icon -->
+
+
+      <!-- Start reddit Icon -->
+      <div id="reddit" onclick="navigate(this.id)" class="social">
+        <span class="icon reddit"><i class="fab fa-github"></i></span>
+      </div>
+      <!-- End reddit Icon -->
+
+      <!-- Start tiktok Icon -->
+      <div id="tiktok" onclick="navigate(this.id)" class="social">
+        <span class="icon tiktok"><i class="fab fa-apple"></i></span>
+      </div>
+      <!-- End tiktok Icon -->
 
       <!-- Start telegram Icon -->
       <div id="telegram" onclick="navigate(this.id)" class="social">
@@ -135,12 +136,12 @@
       </div>
       <!-- End telegram Icon -->
 
-
-        <!-- Start blog Icon -->
-      <div id=".blog" onclick="navigate(this.id)" class="social">
+      <!-- Start blog Icon -->
+      <div id="blog" onclick="navigate(this.id)" class="social">
         <span class="icon blog"><i class="fa-solid fa-blog"></i></span>
       </div>
       <!-- End blog Icon -->
+
     </div>
 
 
@@ -150,37 +151,37 @@
       function navigate(id) {
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
         if (id === "blog")
-          window.open("https://rail1dd.top", '_blank').focus(); //Add the url
-        else if (id === "wechat") {
-          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Wechat_QRcode.png", '_blank').focus(); //Add your email after "mailto:""
-        }
+          window.open("https://rail1dd.top", '_blank').focus(); //Add the url to your blog
+
         else if (id === "email") {
-          window.open("mailto:yumm@rail1dd.ac.cn", '_blank').focus(); //Add your email after "mailto:""
+          window.open("mailto:mail@rail1dd.ac.cn", '_blank').focus(); //Add your email after "mailto:""
         }
+
         else if (id === "facebook") {
-          window.open("https://music.163.com/#/user?id=440336319", '_blank').focus(); //Add the url to your facebook page or account
+          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Wechat_QRcode.png", '_blank').focus(); //Add the url to your facebook page or account
         }
         else if (id === "instagram") {
-          window.open("https://github.com/rail1dd", '_blank').focus(); //Add the url to your instagram account
+          window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
         }
         else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://music.163.com/#/user?id=440336319", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "twitter") {
           window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "reddit") {
-          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
+          window.open("https://github.com/rail1dd", '_blank').focus(); //Add the url to your reddit account
         }
         else if (id === "tiktok") {
-          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
+          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Ming%20Y.vcf", '_blank').focus(); //Add the url to your tiktok account
         }
         else if (id === "youtube") {
           window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
         }
         else if (id === "pinterest") {
-          window.open("https://pics-1318128484.cos.ap-nanjing.myqcloud.com/Ming%20Y.vcf", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "telegram") {
           window.open("https://t.me/rail1dd", '_blank').focus(); //Add the url to your telegram account
